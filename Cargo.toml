@@ -1,6 +1,6 @@
 [package]
 name = "prefer-dynamic"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["William Venner <william@venner.io>"]
 license = "MIT OR Apache-2.0"
@@ -8,6 +8,10 @@ keywords = ["dylib", "prefer-dynamic", "cargo"]
 categories = ["development-tools::build-utils"]
 repository = "https://github.com/WilliamVenner/prefer-dynamic"
 description = "Copies std and test dynamic libraries into your target directory, for -Cprefer-dynamic and dylib crates"
+
+# cargo udeps gives a false positive for this crate, as it contains no code
+[package.metadata.cargo-udeps]
+ignore = true
 
 [features]
 link-test = []
