@@ -13,10 +13,10 @@ Add to your `Cargo.toml`:
 
 ```toml
 [target.'cfg(any(unix, windows))'.dependencies]
-prefer-dynamic = "0.2.0"
+prefer-dynamic = "0.2"
 
 [target.'cfg(any(unix, windows))'.dev-dependencies]
-prefer-dynamic = "0.2.0"
+prefer-dynamic = "0.2"
 ```
 
 Create or edit `.cargo/config.toml` in the manifest root of your project
